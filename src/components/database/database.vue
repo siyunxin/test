@@ -19,9 +19,10 @@
     components: {
       DatabaseHead,
       DatabaseSwich
-    },methods:{
+    },
+      methods:{
       getDatabaseInfo(){
-        this.axios.get('/api/database.json')
+        this.axios.get('/static/mock/database.json')
           .then(this.getDtabaseInfoSucc)
       },
       getDtabaseInfoSucc(res){

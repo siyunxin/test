@@ -15,7 +15,7 @@
 </template>
 
 <script>
-    import MyHeader from '../components/base/mytop'
+    import MyHeader from '@/components/base/mytop'
     import {Group,Cell} from 'vux'
     export default {
         name: "link-details",
@@ -43,8 +43,10 @@
         // },
         methods:{
           getData(){
-              var index = this.$route.params.uid
-              this.axios.get("/api/db.json").then((res)=>{
+              var index = (this.$route.params.id-1);
+              console.log("路由传参"+index);
+
+              this.axios.get("/static/mock/db.json").then((res)=>{
                   var data = res.data['linklistData'];
                   this.company=data[index].company
                   this.type = data[index].relativetype

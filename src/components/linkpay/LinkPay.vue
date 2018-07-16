@@ -23,7 +23,7 @@
 </template>
 
 <script>
-    import MyHeader from '../components/base/mytop'
+    import MyHeader from '../base/mytop'
     import { XHeader,Scroller } from 'vux';
     export default {
         name: "link-pay",
@@ -65,7 +65,7 @@
         },
         beforeRouteEnter:function(to,from,next){
             next(function(vm){
-                vm.axios.get('/api/db.json').then((res)=>{
+                vm.axios.get('/static/mock/db.json').then((res)=>{
                     console.log(res.data)
                     vm.datalist = res.data["paylistData"]
                 })

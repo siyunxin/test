@@ -1,15 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import LinkList from '@/components/LinkList'
-import LinkPay from '@/components/LinkPay'
-import QueryInfo from '@/components/QueryInfo'
-import PayInfo from '@/components/PayInfo'
-import LinkDetails from '@/components/LinkDetails'
+
+import LinkPay from '@/components/linkpay/LinkPay'
+import QueryInfo from '@/components/linklist/QueryInfo'
+import PayInfo from '@/components/linkpay/PayInfo'
+import LinkDetails from '@/components/linklist/LinkDetails'
+import LinkList from '@/components/linklist/Linklist'
 
 
-
-//
 import Work from '@/components/work/work.vue'
 import Company from '@/components/company/company.vue'
 import Database from '@/components/database/database.vue'
@@ -22,19 +21,7 @@ const  routes = [
       name: 'home',
       component: Home
     },
-      {
-        path: '/linklist',  //关联方列表
-        name: 'list',
-        component: LinkList,
-        props: true
 
-      },
-    {
-        path: '/detail/:uid',  //关联数据
-        name: 'link-details',
-        component: LinkDetails ,
-        // props: true
-    },
       {
           path: '/linkpay', //关联交易
           name: 'pay',
@@ -68,6 +55,16 @@ const  routes = [
         name: 'database',
         component: Database
     },
+    {
+        path: '/linklist',
+        name: 'linklist',
+        component: LinkList
+    },
+    {
+        path: '/linklist/:id',
+        name:'linklistid',
+        component: LinkDetails
+    }
 
 
 ]

@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="search">
+      <router-link to="/">
       <x-icon class="icon" type="ios-arrow-back" size="28"></x-icon>
+      </router-link>
       <input v-model="keyword" class="search-input" type="text" placeholder="法人和其他组织信息库" />
       <x-icon class="icon-s" type="ios-search-strong" size="30"></x-icon>
     </div>

@@ -90,5 +90,38 @@
       "sum": 45,
       "type": "物业服务"
     }
+  ],
+  "linklistData2":[
+    {
+      "id": 1,
+      "company": "康建国际医疗集团有限公司",
+      "relativetype": "直接，间接，共同控制法人",
+      "state": "已确认"
+    },
+    {
+      "id": 2,
+      "company": "中国人寿保险销售有限责任公司",
+      "relativetype": "直接，间接，共同控制法人",
+      "state": "已确认"
+    },
+    {
+      "id": 3,
+      "company": "中国人寿（海外）有限责任公司",
+      "relativetype": "直接，间接，共同控制法人",
+      "state": "已确认"
+    },
+    {
+      "id": 4,
+      "company": "中国世贸投资有限公司",
+      "relativetype": "直接，间接，共同控制法人",
+      "state": "已确认"
+    },
+    {
+      "id": 5,
+      "company": "深圳华大基因股份有限公司",
+      "relativetype": "直接，间接，共同控制法人",
+      "state": "已确认"
+    }
+
   ]
 }

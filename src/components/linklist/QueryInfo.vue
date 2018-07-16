@@ -49,7 +49,7 @@
         },
         methods:{
             getCompany(){
-                this.axios.get('/api/db.json').then((res)=>{
+                this.axios.get('/static/mock/db.json').then((res)=>{
 
 
 

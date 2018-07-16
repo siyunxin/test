@@ -24,7 +24,7 @@
      },
      methods:{
        getConpanyInfo(){
-         this.axios.get('/api/company.json', {
+         this.axios.get('/static/mock/company.json', {
            params: {
              id: this.$route.params.id
            }
