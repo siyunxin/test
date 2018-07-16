@@ -3,8 +3,7 @@
     <tab :line-width=2 active-color='#fc378c' v-model="index">
       <tab-item class="vux-center" :selected="demo2 === item" v-for="(item, index) in list2" @click="demo2 = item" :key="index">{{item}}</tab-item>
     </tab>
-    <swiper v-model="index" height="100%"  :show-dots="false" style="overflow: auto;height:500px;font-size: 20px" >
-      <swiper-item v-for="(item, index) in list2" :key="index" style="overflow:auto;height:auto">
+
         <div>
           <scroller lock-x height="-49px" >
             <div>
@@ -17,8 +16,7 @@
             </div>
           </scroller>
         </div>
-      </swiper-item>
-    </swiper>
+
   </div>
 </template>
 

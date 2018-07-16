@@ -7,8 +7,8 @@
         </div>
         <div class="querylist">
            <group>
-               <selector  title="选择单位" placeholer="请选择" :options="list" v-model="defalutValue" direction="rtl"></selector>
-               <selector  title="选择关联方式" :options="list" v-model="defalutValue" direction="rtl"></selector>
+               <selector  title="选择单位" placeholer="请选择" :options="list" direction="rtl"></selector>
+               <selector  title="选择关联方式" :options="way" direction="rtl"></selector>
                <x-input title="输入查询关键字" placeholer="请输入关联信息" text-align="right"></x-input>
            </group>
             <box>
@@ -32,7 +32,6 @@
         },
         data(){
             return{
-                defalutValue: '1',
 
                 list:[
 
@@ -44,13 +43,22 @@
                         key: '02',
                         value: '中国人寿2'
                     }
+                ],
+                way:[
+                    {
+                        id: '01',
+                        value: '法人/其他组织'
+                    },
+                    {
+                        id:'02',
+                        value: '自然人'
+                    }
                 ]
             }
         },
         methods:{
             getCompany(){
                 this.axios.get('/static/mock/db.json').then((res)=>{
-
 
 
                 })

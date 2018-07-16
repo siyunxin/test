@@ -9,7 +9,8 @@
             <group>
                 <x-input type="text" title="交易名称" text-align="right"></x-input>
                 <x-input type="text" title="交易对手" text-align="right"></x-input>
-                <selector  title="选择关联方式" :options="list" v-model="defalutValue" direction="rtl"></selector>
+
+                <selector placeholder="请选择关联方式" v-model="demo1" title="关联方式" name="district" direction="rtl" :options="way" @on-change="onChange"></selector>
             </group>
             <x-button type="primary">
                 查询
@@ -32,19 +33,16 @@
         },
         data(){
             return{
-                defalutValue: '01',
-                    list:[
-                    {
-                        key: '01',
-                        value: '中国人寿1'
-                    },
-                    {
-                        key: '02',
-                        value: '中国人寿2'
-                    }
-                ]
+                demo1:'法人/其他组织',
+
+                way:['法人/其他组织','自然人']
             }
 
+        },
+        methods:{
+            onChange(){
+
+            }
         }
 
     }

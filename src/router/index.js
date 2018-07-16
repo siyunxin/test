@@ -8,10 +8,11 @@ import PayInfo from '@/components/linkpay/PayInfo'
 import LinkDetails from '@/components/linklist/LinkDetails'
 import LinkList from '@/components/linklist/Linklist'
 
-
 import Work from '@/components/work/work.vue'
 import Company from '@/components/company/company.vue'
 import Database from '@/components/database/database.vue'
+
+
 Vue.use(Router)
 
 
@@ -64,8 +65,7 @@ const  routes = [
         path: '/linklist/:id',
         name:'linklistid',
         component: LinkDetails
-    }
-
+    },
 
 ]
 export default new Router({

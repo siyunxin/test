@@ -1,7 +1,7 @@
 <template>
     <div>
         <my-head @go-search="goSearch">
-            <span>关联方名单</span>
+           关联方名单
         </my-head>
         <my-tab :data1="data1" :data2="data2"></my-tab>
     </div>
@@ -45,7 +45,8 @@
                     this.data2 =res.data.linklistData2;
                     console.log("我是"+this.data2)
                 }
-            }
+            },
+
         },
 
         mounted (){
@@ -54,5 +55,8 @@
     }
 </script>
 <style scoped>
-
+.search-input{
+    background: #cacaca;
+    text-align: center;
+}
 </style>
